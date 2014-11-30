@@ -6,5 +6,6 @@ public class Application {
     @Feature
     public class Login {
         public class LoginToSystem {}
+        public class LogoutFromSystem {}
     }
 }

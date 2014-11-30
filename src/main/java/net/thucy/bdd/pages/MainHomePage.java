@@ -13,11 +13,18 @@ public class MainHomePage extends PageObject {
 	@FindBy(id="module-menu")
     private WebElementFacade mainMenu;
 	
+	@FindBy(className="logout")
+	private WebElementFacade logoutButton;
+	
 	public boolean hasMenu() {
 		return mainMenu.isPresent();
 	}
 	
 	public void openCalendar() {
 		
+	}
+	
+	public void Logout() {
+		logoutButton.click();
 	}
 }

@@ -41,4 +41,14 @@ public class AdminSteps  extends ScenarioSteps {
 	public void at_home_page(String s) {
 		assertThat(homePage.hasMenu(), is(true));
 	}
+	
+	@Step
+	public void click_logout(String s) {
+		homePage.Logout();
+	}
+	
+	@Step
+	public void return_to_login_page(String s) {
+		assertThat(loginPage.atLoginPage(), is(true));
+	}
 }
