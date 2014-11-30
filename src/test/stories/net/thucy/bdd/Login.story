@@ -50,6 +50,10 @@ scenario "Login with correct credentials", {
 
 scenario "Logout of system", {
 	given "the user is at home page", {
+		admin.at_login_page ''
+		admin.enter_login 'admin'
+		admin.enter_password 'acby'
+		admin.click_login_button ''
 		admin.at_home_page ''
 	}
 	when "the the user clicks Logout button", {
