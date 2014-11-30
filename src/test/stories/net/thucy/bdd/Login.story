@@ -17,10 +17,10 @@ scenario "Login with incorrect password", {
         admin.at_login_page ''
     }
     when "the end user enters correct login", {
-        admin.enter_login 'admin'
+        admin.enter_login ''
     }
     and "the end user enters incorrect password", {
-    	admin.enter_password 'admin'
+    	admin.enter_password ''
     }
     and "the end user clicks login button", {
     	admin.click_login_button ''
@@ -35,10 +35,10 @@ scenario "Login with correct credentials", {
         admin.at_login_page ''
     }
     when "the end user enters correct login'", {
-        admin.enter_login 'admin'
+        admin.enter_login ''
     }
     and "the end user enters correct password", {
-    	admin.enter_password 'acby'
+    	admin.enter_password ''
     }
     and "the end user clicks login button", {
     	admin.click_login_button ''
