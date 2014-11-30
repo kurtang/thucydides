@@ -14,11 +14,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <thucydides.version>0.9.268</thucydides.version>
         <thucydides.easyb.version>0.9.268</thucydides.easyb.version>
-        <selenium.webdriver.version>2.44.0</selenium.webdriver.version>
         <webdriver.driver>remote</webdriver.driver>
         <webdriver.remote.url>http://192.168.0.104:4444/wd/hub</webdriver.remote.url>
         <webdriver.remote.driver>firefox</webdriver.remote.driver>
-        
     </properties>
 
     <dependencies>
@@ -26,12 +24,6 @@
             <groupId>net.thucydides</groupId>
             <artifactId>thucydides-core</artifactId>
             <version>${thucydides.version}</version>
-            <exclusions>
-            	<exclusion>
-            		<groupId>org.seleniumhq.selenium</groupId>
-                	<artifactId>selenium-java</artifactId>
-            	</exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -74,7 +66,7 @@
 		<dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
-                <version>${selenium.webdriver.version}</version>
+                <version>2.44.0</version>
         </dependency>
     </dependencies>
     <build>
@@ -98,8 +90,9 @@
                     <parallel>classes</parallel>
                     <systemPropertyVariables>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>
-                        <webdriver.remote.url>${webdriver.remote.url}</webdriver.remote.url>
-                        <webdriver.remote.driver>${webdriver.remote.driver}</webdriver.remote.driver>
+                        <webdriver.driver>${webdriver.driver}</webdriver.driver>
+						<webdriver.remote.url>${webdriver.remote.url}</webdriver.remote.url>
+						<webdriver.remote.driver>${webdriver.remote.driver}</webdriver.remote.driver>
                     </systemPropertyVariables>
                 </configuration>
                 <executions>
