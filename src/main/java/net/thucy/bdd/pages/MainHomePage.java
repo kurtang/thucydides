@@ -16,4 +16,8 @@ public class MainHomePage extends PageObject {
 	public boolean hasMenu() {
 		return mainMenu.isPresent();
 	}
+	
+	public void openCalendar() {
+		
+	}
 }
