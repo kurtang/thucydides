@@ -7,7 +7,7 @@ import net.thucydides.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.WebElementFacade;
 
-@DefaultUrl("http://sport-tv.com.ua/tst/administrator")
+
 public class LoginPage extends PageObject{
 	@FindBy(name = "username")
 	private WebElementFacade usernameInput;
